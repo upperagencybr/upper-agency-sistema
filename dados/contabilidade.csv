@@ -1,0 +1,5 @@
+description,dueDate,dueDay,id,periodKey,status,title
+Boleto mensal do MEI (INSS + ICMS/ISS). Emitir no Portal do Empreendedor ou no app MEI e pagar até o vencimento.,2026-11-20,Dia 20 de cada mês,1,mensal,pendente,Pagar o DAS do mês
+"Preencher o relatório de receitas do mês (obrigatório para o MEI, mesmo sem faturamento no mês).",2026-12-20,Até o dia 20 do mês seguinte,2,mensal,pendente,Relatório mensal de receitas brutas
+Somar o faturamento acumulado do ano e comparar com o teto anual do MEI para não estourar o limite.,2026-11-30,Todo mês,3,mensal,pendente,Conferir o limite de faturamento do MEI
+Declaração Anual do Simples Nacional do MEI: informar o faturamento do ano anterior no Portal do Empreendedor.,2027-05-31,Até 31 de maio de cada ano,4,anual,pendente,DASN-SIMEI (declaração anual)

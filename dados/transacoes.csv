@@ -1,0 +1,131 @@
+amount,category,clientId,clientName,company,createdAt,currency,date,description,dueDate,id,installmentCount,installmentGroup,installmentIndex,productCodes,recurrenceCount,recurrenceFreq,recurrenceGroup,recurrenceIndex,recurrenceUntil,status,type
+300,Investimento,,,,2026-11-07T15:18:00.410Z,BRL,2026-12-30,Caixinha praia,2026-12-30,131,,,,[],,,,,,pendente,despesa
+250,Gastos com carro,,,,2026-11-07T15:18:00.368Z,BRL,2026-12-30,Pedágio,2026-12-30,129,,,,[],,,,,,pendente,despesa
+200,Lazer,,,,2026-11-07T15:18:00.348Z,BRL,2026-12-30,Lazer,2026-12-30,128,,,,[],,,,,,pendente,despesa
+800,Alimentação,,,,2026-11-07T15:18:00.302Z,BRL,2026-12-30,Mercado,2026-12-30,126,,,,[],,,,,,pendente,despesa
+300,Gastos com carro,,,,2026-11-07T15:18:00.262Z,BRL,2026-12-30,Combustível,2026-12-30,125,,,,[],,,,,,pendente,despesa
+37.98,Outros,,,,2026-11-07T15:18:00.390Z,BRL,2026-12-23,Negociação NU Aline,2026-12-23,130,,,,[],,,,,,pendente,despesa
+800,Casa,,,,2026-11-07T15:18:00.208Z,BRL,2026-12-23,Aluguel,2026-12-23,123,,,,[],,,,,,pendente,despesa
+86.05,Business,,,,2026-11-07T15:18:00.328Z,BRL,2026-12-21,CNPJ,2026-12-21,127,,,,[],,,,,,pendente,despesa
+143.84,Pessoal,,,,2026-11-07T15:18:00.239Z,BRL,2026-12-21,Vivo Celular,2026-12-21,124,,,,[],,,,,,pendente,despesa
+32.66,Pessoal,,,,2026-11-07T15:17:52.246Z,BRL,2026-12-20,Casas Bahia,2026-12-20,115,,,,[],,,,,,pendente,despesa
+191.88,Cartão,,,,2026-11-07T15:17:52.271Z,BRL,2026-12-16,PicPay - Negociação,2026-12-16,117,,,,[],,,,,,pendente,despesa
+50,Lazer,,,,2026-11-07T15:17:52.219Z,BRL,2026-12-15,Festa Natal Casal,2026-12-15,113,,,,[],,,,,,pendente,despesa
+99.99,Casa,,,,2026-11-07T15:17:52.326Z,BRL,2026-12-12,BR Net,2026-12-12,121,,,,[],,,,,,pendente,despesa
+300,Investimento,,,,2026-11-07T15:17:52.311Z,BRL,2026-12-10,Investimento,2026-12-10,120,,,,[],,,,,,pendente,despesa
+150,Investimento,,,,2026-11-07T15:17:52.284Z,BRL,2026-12-10,Emergência,2026-12-10,118,,,,[],,,,,,pendente,despesa
+570,Pessoal,,,,2026-11-07T15:17:52.259Z,BRL,2026-12-10,Alan Celular,2026-12-10,116,,,,[],,,,,,pendente,despesa
+55.9,,2,Célia Miranda Godói,OLIARIS,2026-11-06T20:30:36.564Z,BRL,2026-12-08,"01 - Brinco redondo médio com zircônia, 01 - Pulseira corrente com bolinhas (2/2)",2026-12-08,4,2,b3c26b9a-7898-423f-b0e8-54ce4e83704b,2,"['1080', '10350']",,,,,,pendente,receita
+52,,1,Alan Bruno Godoi Fortunato,OLIARIS,2026-11-06T20:12:45.796Z,BRL,2026-12-08,Pulseira corrente de elos achatados larga (2/2),2026-12-08,2,2,1cf3b840-42cd-4876-b77a-0051508437c4,2,['10400'],,,,,,pendente,receita
+50,Casa,,,,2026-11-07T15:17:52.339Z,BRL,2026-12-06,Luz,2026-12-06,122,,,,[],,,,,,pendente,despesa
+69.33,Cartão,,,,2026-11-07T15:17:52.296Z,BRL,2026-12-05,Negociação Inter (3/11),2026-12-05,119,,,,[],,,,,,pendente,despesa
+100,Pessoal,,,,2026-11-07T15:17:52.233Z,BRL,2026-12-04,Espaço Vip,2026-12-04,114,,,,[],,,,,,pendente,despesa
+60,Casa,,,,2026-11-07T15:17:52.188Z,BRL,2026-12-04,Agua,2026-12-04,111,,,,[],,,,,,pendente,despesa
+66.9,Business,,,,2026-11-07T15:17:52.205Z,BRL,2026-12-02,Apple (Storage),2026-12-02,112,,,,[],,,,,,pendente,despesa
+300,Gastos com carro,,,,2026-11-07T15:17:39.180Z,BRL,2026-11-30,Combustível,2026-11-30,110,,,,[],,,,,,pendente,despesa
+80,Pessoal,,,,2026-11-07T15:17:39.168Z,BRL,2026-11-30,Sand e Nala,2026-11-30,109,,,,[],,,,,,pendente,despesa
+300,Investimento,,,,2026-11-07T15:17:39.152Z,BRL,2026-11-30,Caixinha praia,2026-11-30,108,,,,[],,,,,,pendente,despesa
+250,Gastos com carro,,,,2026-11-07T15:17:39.133Z,BRL,2026-11-30,Pedágio,2026-11-30,107,,,,[],,,,,,pendente,despesa
+800,Alimentação,,,,2026-11-07T15:17:39.101Z,BRL,2026-11-30,Mercado,2026-11-30,105,,,,[],,,,,,pendente,despesa
+200,Lazer,,,,2026-11-07T15:17:39.052Z,BRL,2026-11-30,Lazer,2026-11-30,101,,,,[],,,,,,pendente,despesa
+1000,Outros,,,,2026-11-07T15:17:39.089Z,BRL,2026-11-28,Junin,2026-11-28,104,,,,[],,,,,,pendente,despesa
+37.98,Outros,,,,2026-11-07T15:17:39.116Z,BRL,2026-11-23,Negociação NU Aline,2026-11-23,106,,,,[],,,,,,pendente,despesa
+800,Casa,,,,2026-11-07T15:17:39.037Z,BRL,2026-11-23,Aluguel,2026-11-23,100,,,,[],,,,,,pendente,despesa
+143.84,Pessoal,,,,2026-11-07T15:17:39.076Z,BRL,2026-11-21,Vivo Celular,2026-11-21,103,,,,[],,,,,,pendente,despesa
+86.05,Business,,,,2026-11-07T15:17:39.064Z,BRL,2026-11-21,CNPJ,2026-11-21,102,,,,[],,,,,,pendente,despesa
+32.66,Pessoal,,,,2026-11-07T15:17:30.285Z,BRL,2026-11-20,Casas Bahia,2026-11-20,99,,,,[],,,,,,pendente,despesa
+170.39,Cartão,,,,2026-11-07T15:17:30.228Z,BRL,2026-11-20,PicPay - Crédito,2026-11-20,95,,,,[],,,,,,pendente,despesa
+191.88,Cartão,,,,2026-11-07T15:17:30.256Z,BRL,2026-11-16,PicPay - Negociação,2026-11-16,97,,,,[],,,,,,pendente,despesa
+50,Lazer,,,,2026-11-07T15:17:30.188Z,BRL,2026-11-15,Festa Natal Casal,2026-11-15,92,,,,[],,,,,,pendente,despesa
+59.99,Casa,,,,2026-11-07T15:17:30.150Z,BRL,2026-11-12,BR Net,2026-11-12,89,,,,[],,,,,,pendente,despesa
+150,Investimento,,,,2026-11-07T15:17:30.242Z,BRL,2026-11-10,Emergência,2026-11-10,96,,,,[],,,,,,pendente,despesa
+570,Pessoal,,,,2026-11-07T15:17:30.202Z,BRL,2026-11-10,Alan Celular,2026-11-10,93,,,,[],,,,,,pendente,despesa
+300,Investimento,,,,2026-11-07T15:17:30.068Z,BRL,2026-11-10,Investimento,2026-11-10,88,,,,[],,,,,,pendente,despesa
+52,,1,Alan Bruno Godoi Fortunato,OLIARIS,2026-11-06T20:12:45.748Z,BRL,2026-11-10,Pulseira corrente de elos achatados larga (1/2),2026-11-08,1,2,1cf3b840-42cd-4876-b77a-0051508437c4,1,['10400'],,,,,,pago,receita
+55.9,,2,Célia Miranda Godói,OLIARIS,2026-11-06T20:30:36.546Z,BRL,2026-11-08,"01 - Brinco redondo médio com zircônia, 01 - Pulseira corrente com bolinhas (1/2)",2026-11-08,3,2,b3c26b9a-7898-423f-b0e8-54ce4e83704b,1,"['1080', '10350']",,,,,,pendente,receita
+69.33,Cartão,,,,2026-11-07T15:17:30.213Z,BRL,2026-11-05,Negociação Inter (2/11),2026-11-05,94,,,,[],,,,,,pendente,despesa
+100,Pessoal,,,,2026-11-07T15:17:30.176Z,BRL,2026-11-04,Espaço Vip,2026-11-04,91,,,,[],,,,,,pago,despesa
+60,Casa,,,,2026-11-07T15:17:30.163Z,BRL,2026-11-04,Agua,2026-11-04,90,,,,[],,,,,,pendente,despesa
+259.9,Muse IA,13,Isadora Muratori,NEXO,2026-11-07T15:09:15.765Z,BRL,2026-11-04,Muse IA - Loja Nexo - Pix,2026-11-04,16,,,,[],,,,,,pago,receita
+66.9,Business,,,,2026-11-07T15:17:30.271Z,BRL,2026-11-02,Apple (Storage),2026-11-02,98,,,,[],,,,,,pendente,despesa
+150,Gastos com carro,,,,2026-11-07T15:17:16.574Z,BRL,2026-10-30,Combustível,2026-10-30,83,,,,[],,,,,,pago,despesa
+250.92,GMN,12,Amanda Day Care,UPPER BR,2026-11-07T14:40:39.709Z,BRL,2026-10-29,GMN - Day Care Center - Pix,2026-10-29,13,,,,[],,,,,,pago,receita
+163,Pessoal,,,,2026-11-07T15:17:16.461Z,BRL,2026-10-28,Remedio Amy (Psiquiatra),2026-10-28,78,,,,[],,,,,,pago,despesa
+333,CONTA LOVABLE,9,David Cucker,UPPER BR,2026-11-07T14:40:39.768Z,BRL,2026-10-28,CONTA LOVABLE - The Lapwing Group - Pix,2026-10-28,15,,,,[],,,,,,pago,receita
+192.56,CONTA LOVABLE,8,Raniera Ceccato,UPPER BR,2026-11-07T14:40:39.735Z,BRL,2026-10-24,CONTA LOVABLE - Psi Raniera Ceccato - Pix,2026-10-24,14,,,,[],,,,,,pago,receita
+37.98,Pessoal,,,,2026-11-07T15:17:16.594Z,BRL,2026-10-23,Negociação NU Aline,2026-10-23,84,,,,[],,,,,,pago,despesa
+599,Casa,,,,2026-11-07T15:17:16.402Z,BRL,2026-10-23,Aluguel,2026-10-23,75,,,,[],,,,,,pago,despesa
+69,Pessoal,,,,2026-11-07T15:17:16.616Z,BRL,2026-10-21,Shopee,2026-10-21,85,,,,[],,,,,,pago,despesa
+48.1,Pessoal,,,,2026-11-07T15:17:16.523Z,BRL,2026-10-21,Cartório - Firma Amy,2026-10-21,81,,,,[],,,,,,pago,despesa
+86.05,Business,,,,2026-11-07T15:17:16.482Z,BRL,2026-10-21,CNPJ,2026-10-21,79,,,,[],,,,,,pago,despesa
+143.84,Pessoal,,,,2026-11-07T15:17:16.422Z,BRL,2026-10-21,Vivo Celular,2026-10-21,76,,,,[],,,,,,pago,despesa
+32.66,Pessoal,,,,2026-11-07T15:17:16.643Z,BRL,2026-10-20,Casas Bahia,2026-10-20,86,,,,[],,,,,,pago,despesa
+170.39,Cartão,,,,2026-11-07T15:17:16.501Z,BRL,2026-10-20,PicPay - Crédito,2026-10-20,80,,,,[],,,,,,pago,despesa
+191.88,Cartão,,,,2026-11-07T15:17:16.543Z,BRL,2026-10-16,PicPay - Negociação,2026-10-16,82,,,,[],,,,,,pago,despesa
+50,Lazer,,,,2026-11-07T15:17:16.664Z,BRL,2026-10-15,Festa Natal Casal,2026-10-15,87,,,,[],,,,,,pendente,despesa
+1000,Pessoal,,,,2026-11-07T15:17:16.371Z,BRL,2026-10-15,Advogado (caso angela),2026-10-15,74,,,,[],,,,,,pendente,despesa
+247,PORTFÓLIO,5,Pablo Campos,UPPER BR,2026-11-07T14:40:39.683Z,BRL,2026-10-15,PORTFÓLIO - Pablo Campos - Projetista - Pix,2026-10-15,12,,,,[],,,,,,pago,receita
+56.99,Business,,,,2026-11-07T15:17:06.372Z,BRL,2026-10-14,Ferramenta de IA - MUSE IA,2026-10-14,67,,,,[],,,,,,pago,despesa
+59.99,Casa,,,,2026-11-07T15:17:06.405Z,BRL,2026-10-12,BR Net,2026-10-12,68,,,,[],,,,,,pago,despesa
+1200,Investimento,,,,2026-11-07T15:17:06.473Z,BRL,2026-10-10,Investimento,2026-10-10,69,,,,[],,,,,,pendente,despesa
+150,Investimento,,,,2026-11-07T15:17:06.348Z,BRL,2026-10-10,Emergência,2026-10-10,66,,,,[],,,,,,pendente,despesa
+570,Pessoal,,,,2026-11-07T15:17:06.295Z,BRL,2026-10-10,Alan Celular,2026-10-10,64,,,,[],,,,,,pendente,despesa
+146.91,Pessoal,,,,2026-11-07T15:17:06.562Z,BRL,2026-10-08,Tia Silvinha,2026-10-08,73,,,,[],,,,,,pendente,despesa
+50,Casa,,,,2026-11-07T15:17:06.495Z,BRL,2026-10-06,Luz,2026-10-06,70,,,,[],,,,,,pendente,despesa
+69.33,Cartão,,,,2026-11-07T15:17:06.541Z,BRL,2026-10-05,Negociação Inter (1/11),2026-10-05,72,,,,[],,,,,,pago,despesa
+88.37,Cartão,,,,2026-11-07T15:17:06.183Z,BRL,2026-10-05,Negociação Inter - Entrada,2026-10-05,60,,,,[],,,,,,pago,despesa
+87,Pessoal,,,,2026-11-07T15:17:06.137Z,BRL,2026-10-05,Pagar mãe,2026-10-05,59,,,,[],,,,,,pago,despesa
+60,Casa,,,,2026-11-07T15:17:06.265Z,BRL,2026-10-04,Agua,2026-10-04,63,,,,[],,,,,,pago,despesa
+235,Pessoal,,,,2026-11-07T15:17:06.234Z,BRL,2026-10-04,Espaço Vip,2026-10-04,62,,,,[],,,,,,pago,despesa
+125,Pessoal,,,,2026-11-07T15:17:06.323Z,BRL,2026-10-02,Tio Joao - Bike + Queijo,2026-10-02,65,,,,[],,,,,,pendente,despesa
+66.9,Business,,,,2026-11-07T15:17:06.212Z,BRL,2026-10-02,Apple (Storage),2026-10-02,61,,,,[],,,,,,pendente,despesa
+150,Pessoal,,,,2026-11-07T15:17:06.520Z,BRL,2026-10-01,Remedio Amy (Psiquiatra),2026-10-01,71,,,,[],,,,,,pago,despesa
+444,GMN + SITE,3,Karla Fortunato,UPPER BR,2026-11-07T14:40:39.549Z,BRL,2026-10-01,GMN + SITE - Psi Karla Fortunato - Pix,2026-10-01,8,,,,[],,,,,,pago,receita
+300,Gastos com carro,,,,2026-11-07T15:16:54.190Z,BRL,2026-09-30,Combustível,2026-09-30,57,,,,[],,,,,,pago,despesa
+1000,Alimentação,,,,2026-11-07T15:16:54.167Z,BRL,2026-09-30,Mercado,2026-09-30,56,,,,[],,,,,,pago,despesa
+150,Outros,,,,2026-11-07T15:16:54.147Z,BRL,2026-09-30,Remedio,2026-09-30,55,,,,[],,,,,,pago,despesa
+150,Lazer,,,,2026-11-07T15:16:54.127Z,BRL,2026-09-30,Lazer,2026-09-30,54,,,,[],,,,,,pago,despesa
+117,Casa,,,,2026-11-07T15:16:54.066Z,BRL,2026-09-30,Gás,2026-09-30,51,,,,[],,,,,,pago,despesa
+35,Business,,,,2026-11-07T15:16:54.107Z,BRL,2026-09-29,Gemini Pro,2026-09-29,53,,,,[],,,,,,pago,despesa
+713,GMN + PACK + SITE,11,Mariana Rodrigues,UPPER BR,2026-11-07T14:40:39.529Z,BRL,2026-09-26,GMN + PACK + SITE - Psi Mariana Rodrigues - Cartão de Crédito,2026-09-26,7,,,,[],,,,,,pago,receita
+30,Casa,,,,2026-11-07T15:16:54.045Z,BRL,2026-09-24,Plano de Tv,2026-09-24,50,,,,[],,,,,,pago,despesa
+37.98,Outros,,,,2026-11-07T15:16:54.211Z,BRL,2026-09-23,Negociação NU Aline,2026-09-23,58,,,,[],,,,,,pago,despesa
+800,Casa,,,,2026-11-07T15:16:54.088Z,BRL,2026-09-23,Aluguel,2026-09-23,52,,,,[],,,,,,pago,despesa
+110,Pessoal,,,,2026-11-07T15:16:53.985Z,BRL,2026-09-23,Banho Sand,2026-09-23,48,,,,[],,,,,,pago,despesa
+813,GMN + PACK + SITE,8,Raniera Ceccato,UPPER BR,2026-11-07T14:40:39.611Z,BRL,2026-09-22,GMN + PACK + SITE - Psi Raniera Ceccato - Pix,2026-09-22,10,,,,[],,,,,,pago,receita
+143.84,Pessoal,,,,2026-11-07T15:16:54.019Z,BRL,2026-09-21,Vivo Celular,2026-09-21,49,,,,[],,,,,,pendente,despesa
+86.05,Business,,,,2026-11-07T15:16:53.955Z,BRL,2026-09-21,CNPJ,2026-09-21,47,,,,[],,,,,,pago,despesa
+32.66,Pessoal,,,,2026-11-07T15:16:53.918Z,BRL,2026-09-20,Casas Bahia,2026-09-20,46,,,,[],,,,,,pago,despesa
+50,Lazer,,,,2026-11-07T15:16:44.024Z,BRL,2026-09-15,Festa Natal Casal,2026-09-15,37,,,,[],,,,,,pago,despesa
+1000,Pessoal,,,,2026-11-07T15:16:44.012Z,BRL,2026-09-15,Advogado (caso angela),2026-09-15,36,,,,[],,,,,,pago,despesa
+50,Pessoal,,,,2026-11-07T15:16:44.162Z,BRL,2026-09-12,Banho Sand,2026-09-12,45,,,,[],,,,,,pago,despesa
+59.99,Casa,,,,2026-11-07T15:16:44.140Z,BRL,2026-09-12,BR Net,2026-09-12,44,,,,[],,,,,,pago,despesa
+300,Investimento,,,,2026-11-07T15:16:44.036Z,BRL,2026-09-10,Investimento,2026-09-10,38,,,,[],,,,,,pago,despesa
+1500,TAX MENSAL,7,Adriana Bitencourt,UPPER US,2026-11-07T14:40:39.654Z,BRL,2026-09-10,TAX MENSAL - Adriana Cleaning Service - EUA,2026-09-10,11,,,,[],,,,,,pago,receita
+544,SITE,10,Wanderson Bruno,UPPER BR,2026-11-07T14:40:39.505Z,BRL,2026-09-10,SITE - Secundino Advocacia - Pix,2026-09-10,6,,,,[],,,,,,pago,receita
+89,Pessoal,,,,2026-11-07T15:16:44.096Z,BRL,2026-09-08,Itisla,2026-09-08,42,,,,[],,,,,,pago,despesa
+150,Pessoal,,,,2026-11-07T15:16:44.080Z,BRL,2026-09-08,Tia Silvinha,2026-09-08,41,,,,[],,,,,,pago,despesa
+25,TAX MENSAL,4,Maria Aparecida Borges,UPPER US,2026-11-07T14:40:39.576Z,BRL,2026-09-08,TAX MENSAL - Borges Cleaning Service - EUA,2026-09-08,9,,,,[],,,,,,pago,receita
+99,Casa,,,,2026-11-07T15:16:44.049Z,BRL,2026-09-06,Luz,2026-09-06,39,,,,[],,,,,,pago,despesa
+135,Pessoal,,,,2026-11-07T15:16:44.120Z,BRL,2026-09-04,Espaço Vip,2026-09-04,43,,,,[],,,,,,pago,despesa
+108,Lazer,,,,2026-11-07T15:16:44.064Z,BRL,2026-09-04,Andre,2026-09-04,40,,,,[],,,,,,pago,despesa
+20,Casa,,,,2026-11-07T15:16:43.984Z,BRL,2026-09-04,Agua,2026-09-04,34,,,,[],,,,,,pago,despesa
+66.9,Business,,,,2026-11-07T15:16:43.966Z,BRL,2026-09-02,Apple (Storage),2026-09-02,33,,,,[],,,,,,pago,despesa
+125,Pessoal,,,,2026-11-07T15:16:43.930Z,BRL,2026-09-02,Tio Joao - Bike + Queijo,2026-09-02,32,,,,[],,,,,,pago,despesa
+250,TAX MENSAL,6,Michele F. S. Barros,UPPER US,2026-11-07T14:40:39.481Z,BRL,2026-09-02,TAX MENSAL - MB Cleaning Service - EUA,2026-09-02,5,,,,[],,,,,,pago,receita
+155,Cartão,,,,2026-11-07T15:16:43.998Z,BRL,2026-09-01,C6 Bank - Credito,2026-09-01,35,,,,[],,,,,,pago,despesa
+300,Gastos com carro,,,,2026-11-07T15:16:32.920Z,BRL,2026-08-30,Combustível,2026-08-30,26,,,,[],,,,,,pago,despesa
+800,Alimentação,,,,2026-11-07T15:16:32.876Z,BRL,2026-08-30,Mercado,2026-08-30,24,,,,[],,,,,,pago,despesa
+300,Lazer,,,,2026-11-07T15:16:32.788Z,BRL,2026-08-30,Lazer,2026-08-30,18,,,,[],,,,,,pago,despesa
+60,Casa,,,,2026-11-07T15:16:32.862Z,BRL,2026-08-24,Plano de Tv,2026-08-24,23,,,,[],,,,,,pago,despesa
+800,Casa,,,,2026-11-07T15:16:32.891Z,BRL,2026-08-23,Aluguel,2026-08-23,25,,,,[],,,,,,pago,despesa
+37.98,Outros,,,,2026-11-07T15:16:32.818Z,BRL,2026-08-23,Negociação NU Aline,2026-08-23,20,,,,[],,,,,,pago,despesa
+110,Pessoal,,,,2026-11-07T15:16:32.803Z,BRL,2026-08-23,Banho Sand,2026-08-23,19,,,,[],,,,,,pago,despesa
+86.05,Business,,,,2026-11-07T15:16:32.995Z,BRL,2026-08-21,CNPJ,2026-08-21,31,,,,[],,,,,,pago,despesa
+143.84,Pessoal,,,,2026-11-07T15:16:32.848Z,BRL,2026-08-21,Vivo Celular,2026-08-21,22,,,,[],,,,,,pago,despesa
+110,Pessoal,,,,2026-11-07T15:16:32.980Z,BRL,2026-08-12,Banho Sand,2026-08-12,30,,,,[],,,,,,pago,despesa
+300,Investimento,,,,2026-11-07T15:16:32.936Z,BRL,2026-08-10,Investimento,2026-08-10,27,,,,[],,,,,,pago,despesa
+135,Pessoal,,,,2026-11-07T15:16:32.833Z,BRL,2026-08-08,Tia Silvinha,2026-08-08,21,,,,[],,,,,,pago,despesa
+130,Pessoal,,,,2026-11-07T15:16:32.965Z,BRL,2026-08-04,Espaço Vip,2026-08-04,29,,,,[],,,,,,pago,despesa
+108,Lazer,,,,2026-11-07T15:16:32.952Z,BRL,2026-08-04,Andre,2026-08-04,28,,,,[],,,,,,pago,despesa
+66.9,Business,,,,2026-11-07T15:16:32.748Z,BRL,2026-08-02,Apple (Storage),2026-08-02,17,,,,[],,,,,,pago,despesa

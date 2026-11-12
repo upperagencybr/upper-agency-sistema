@@ -1,0 +1,5 @@
+address,country,createdAt,email,id,legalName,logoUrl,name,notes,phone,segment,taxId
+,Brasil,2026-11-06T17:33:05.508Z,agencyadm@outlook.com,4,NEXO GROUP,./blobs/Y29tcGFueS1sb2dvcy80,NEXO,,31997462404,Consultoria & Vendas,66.014.088/0001-09
+,Estados Unidos,2026-11-06T17:28:12.458Z,contact@upperagencycompany.com,3,UPPER AGENCY COMPANY EUA,./blobs/Y29tcGFueS1sb2dvcy8z,UPPER US,,+1 (716) 657 - 2146,Marketing,985-94-8849
+,Brasil,2026-11-06T17:25:48.130Z,upperagencybr@gmail.com,2,UPPER AGENCY COMPANY BRASIL,./blobs/Y29tcGFueS1sb2dvcy8y,UPPER BR,,31 7233-5351,Marketing,66.014.088/0001-09
+,Brasil,2026-11-06T17:22:18.379Z,oliarisadm@outlook.com,1,OLIARIS FINE JEWELRY,./blobs/Y29tcGFueS1sb2dvcy8x,OLIARIS,,31997592404,Ouro,66.014.088/0001-09
