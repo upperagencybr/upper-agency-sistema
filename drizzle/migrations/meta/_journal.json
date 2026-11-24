@@ -1,0 +1,146 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1794500142156,
+      "tag": "0000_upper_agency_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1794500209423,
+      "tag": "0001_profile_goals",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1794504798207,
+      "tag": "0002_goals_accounting_nexo",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1794513414358,
+      "tag": "0003_tags_drive_team",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1794513733987,
+      "tag": "0004_editable_options",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1794521577300,
+      "tag": "0005_subscriptions_billing",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1794522300492,
+      "tag": "0006_subscription_paused",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1794580116498,
+      "tag": "0007_sidebar_prefs",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1794580813519,
+      "tag": "0008_sidebar_hidden_sections",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1794581679983,
+      "tag": "0009_plan_limits",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1794581983070,
+      "tag": "0010_business_one_admin_employee",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1794584027102,
+      "tag": "0011_private_feedback_conversations",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1794584208142,
+      "tag": "0012_feedback_readonly_direct_access",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1794586945848,
+      "tag": "0013_attachments_scoped_to_workspace",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1794586979113,
+      "tag": "0014_attachments_own_rows_scoped",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1794587023465,
+      "tag": "0015_attachments_helpers_and_policies",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1794588062609,
+      "tag": "0016_profile_notice_prefs",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1794589455183,
+      "tag": "0017_tag_limits_per_plan",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1794624856905,
+      "tag": "0018_profile_status_appearance",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1794625534477,
+      "tag": "0019_custom_status_lists",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+- [x] Completar filtros independentes de clientes e despesas nas configurações.
+- [x] Incluir financeiro dos clientes e PDFs no modelo enviado, mantendo Excel e CSV.
+- [x] Testar filtros e baixar arquivos reais, conferindo os PDFs visualmente.
+- [x] Adicionar cadastro rápido junto à seleção de cliente em Mentorados, Projetos e Financeiro.
+- [x] Verificar cadastro, seleção automática e preservação do preenchimento.
+- [x] Etiquetas em Projetos, CRM, Clientes e Financeiro.
+- [x] Link da pasta do Drive no cliente.
+- [x] Equipe por empresa (sócio/funcionário, visualizar/editor/admin, abas), convite por e-mail.
+- [x] Quem lançou em cada registro, com filtro.
+- [x] Reconectar pagamentos com a conta Stripe própria do usuário (chave secreta na janela segura); planos Mensal/Anual já existiam na conta.
+- [x] Configurar aviso automático de pagamento do Stripe, com verificação do evento pela conta conectada.
+- [x] Quando o usuário quiser vender de verdade: trocar a chave de teste pela sk_live_, recriar os preços no modo real e trocar a pk_test_ pela pk_live_.
+- [x] Criar página pública de vendas do NEXO HUB com fotos das telas sem dados privados, carrosséis e links para assinatura.
+- [x] Conferir página de vendas no computador e celular, navegação das fotos e acesso à assinatura.
+- [x] Exportações só para dono e sócio admin
+- [x] Trocar link dos e-mails e aviso do Stripe para nexohub.upperagencycompany.co.
+- [x] Reunir vendas na raiz do nexohub, sistema em /sistema e login em /login, conferindo acesso protegido.
+- [x] Atualizar as cinco fotos com dados fictícios, sem corte lateral, e aplicar as fontes do ClickUp no site.
+- [x] Criar e colocar na capa o vídeo de demonstração do Dashboard e Financeiro, conferindo reprodução e celular.
+- [x] Criar conversas privadas de feedbacks, atendimento Upper com filtros e avisos na caixa de entrada.
+- [x] Adicionar aba abaixo de Contabilidade e balão somente com lateral recolhida; testar envio, leitura e resposta.
+- [x] Colocar um x pequeno no balão de feedback e escrever "Nos comunique na área de feedbacks"; aviso continua fechado ao reabrir o sistema.
+- [x] Atualizar assinatura com logo quadrada, planos compartilhados e pagamento direto Stripe com três dias grátis.
+- [ ] Personalizar boas-vindas com link de acesso e suporte, aguarda configurar domínio de envio.
+- [x] Indicadores de etapas em CRM e Clientes, cores e tipos nas Configurações, verificar gravação e telas.
+- [x] Adicionar globo para qualquer cor e porcentagens em todas as etapas, conferir gravação.
+- [x] Editar e adicionar status do CRM e situações dos clientes em Opções, integrar telas e testar.
+- [x] Criar Personalização com temas e paletas e aplicar Paleta 01 às vendas, verificar computador e celular.
+- [x] Atualizar vídeo para claro na Paleta 01 e depois preto, fotos claras/escuras com seletor ao lado.
+- [x] Padronizar botões das Configurações e permitir zoom/enquadramento da foto antes de salvar.
+- [x] Aplicar idioma a todas as telas, configurações, edições e botões, preservando dados cadastrados.
+- [x] Importar clientes e financeiro de Excel, CSV e ZIP nas configurações, com mapeamento, validação e conferência.
+- [x] Testar leitura na conta autenticada e gravação/prevenção de duplicatas em teste isolado, sem inserir dados fictícios na conta real.

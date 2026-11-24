@@ -1,0 +1,8 @@
+[
+ {"capability":"code","source":"PROMPT-LOVABLE.md spec (no source code in archive)","outcome":"rebuilt all 10 screens","status":"verified","next_action":null},
+ {"capability":"schema","source":"dados/schema-supabase.sql","outcome":"migrated with per-user access","status":"verified","next_action":null},
+ {"capability":"records","source":"dados/backup-2026-11-11.json","outcome":"4 companies, 13 clients, 130 transactions, 1 lead, 4 tasks imported; claimed by first account","status":"verified","next_action":null},
+ {"capability":"auth","source":"spec: email/password","outcome":"email, Google, Lovable sign-in","status":"pending","next_action":"owner signs up first to receive records"},
+ {"capability":"company logos","source":"imagens/ (not in archive)","outcome":"upload field ready","status":"pending","next_action":"user uploads logos in Empresas"},
+ {"capability":"stripe subscription","source":"spec: later","outcome":"status field + block screen ready","status":"pending","next_action":"connect payments when requested"}
+]

@@ -1,0 +1,1 @@
+alter table public.profiles add column goal_sales int not null default 10, add column goal_clients int not null default 5;

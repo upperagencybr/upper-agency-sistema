@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS sidebar_hidden text[] NOT NULL DEFAULT '{}'; COMMENT ON COLUMN public.profiles.sidebar_hidden IS 'Navigation paths hidden by this account only; does not delete records or change permissions.';

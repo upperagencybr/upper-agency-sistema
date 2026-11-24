@@ -1,0 +1,2 @@
+alter table public.profiles add column if not exists lead_origins text[] not null default array['Indicação','Instagram','Site','WhatsApp','Evento','Outro'];
+alter table public.profiles add column if not exists tx_categories text[] not null default array['Serviço','Produto','Assinatura','Marketing','Impostos','Business','Outros'];

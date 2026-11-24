@@ -1,0 +1,1 @@
+alter table public.subscriptions add column paused boolean not null default false;

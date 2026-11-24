@@ -1,0 +1,2 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS status_appearance jsonb NOT NULL DEFAULT '{}'::jsonb;
+COMMENT ON COLUMN public.profiles.status_appearance IS 'Personal display preferences for CRM and client status indicators; does not change stored record stages.';

@@ -1,0 +1,2 @@
+ALTER TABLE public.profiles ADD COLUMN IF NOT EXISTS status_lists jsonb NOT NULL DEFAULT '{}'::jsonb;
+COMMENT ON COLUMN public.profiles.status_lists IS 'Custom CRM and client status labels with immutable ids; renaming labels preserves existing record stages.';
