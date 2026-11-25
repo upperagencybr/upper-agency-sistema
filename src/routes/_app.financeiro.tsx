@@ -73,6 +73,20 @@ function groupByMonth(list: Tx[], currency: string, dueOf: (t: Tx) => string): T
   return [...map.values()].sort((a, b) => b.key.localeCompare(a.key));
 }
 
+/** Groups transactions by company A-Z; rows without a company go last. Subtotals only count `currency`. */
+function groupByCompany(list: Tx[], currency: string): TxGroup[] {
+  const map = new Map<string, TxGroup>();
+  for (const t of list) {
+    const name = (t.company || "").trim() || null;
+    const key = name ? name.toLocaleLowerCase("pt-BR") : "\u0000none";
+    let g = map.get(key);
+    if (!g) { g = { key, label: name ?? "Sem empresa", items: [], rec: 0, desp: 0 }; map.set(key, g); }
+    g.items.push(t);
+    if (t.currency === currency) { if (t.type === "receita") g.rec += Number(t.amount); else g.desp += Number(t.amount); }
+  }
+  return [...map.values()].sort((a, b) => !a.label || a.label === "Sem empresa" ? 1 : !b.label || b.label === "Sem empresa" ? -1 : a.label.localeCompare(b.label, "pt-BR", { sensitivity: "base" }));
+}
+
 function Financeiro() {
   const { tr } = useI18n();
   const { canExport } = useAccess();
@@ -87,7 +101,7 @@ function Financeiro() {
   const [fTag, setFTag] = useState("");
   const [fBy, setFBy] = useState("");
   const [q, setQ] = useState("");
-  const [view, setView] = useState<"lista" | "mesano">("lista");
+  const [view, setView] = useState<"lista" | "mesano" | "empresa">("lista");
   const curList = useMemo(() => { const c: Record<string, number> = {}; txs.forEach((t) => (c[t.currency] = (c[t.currency] ?? 0) + 1)); return Object.entries(c).sort((a, b) => b[1] - a[1]).map(([k]) => k); }, [txs]);
   const [curSel, setCurSel] = useState("");
   const kcur = curSel || curList[0] || "USD";
@@ -180,7 +194,7 @@ function Financeiro() {
       </tr>
     </thead>
   );
-  const groups = useMemo(() => view === "mesano" ? groupByMonth(list, kcur, due) : [], [view, list, kcur]);
+  const groups = useMemo(() => view === "mesano" ? groupByMonth(list, kcur, due) : view === "empresa" ? groupByCompany(list, kcur) : [], [view, list, kcur]);
 
   return (
     <div>
@@ -222,6 +236,7 @@ function Financeiro() {
         <div role="group" aria-label={tr("Visualização")} className="flex gap-1">
           <button className="chip" data-on={view === "lista"} onClick={() => setView("lista")}>{tr("Lista")}</button>
           <button className="chip" data-on={view === "mesano"} onClick={() => setView("mesano")}>{tr("Por mês e ano")}</button>
+          <button className="chip" data-on={view === "empresa"} onClick={() => setView("empresa")}>{tr("Por empresa")}</button>
         </div>
         <div className="ml-auto flex gap-2"><TagFilter value={fTag} onChange={setFTag} /><PersonFilter value={fBy} onChange={setFBy} /></div>
       </div>
@@ -233,7 +248,7 @@ function Financeiro() {
           </div>
         ))}
       </div>
-      {list.length === 0 ? <Empty>{tr("Nada por aqui.")}</Empty> : view === "mesano" ? (
+      {list.length === 0 ? <Empty>{tr("Nada por aqui.")}</Empty> : view !== "lista" ? (
         <div className="space-y-4">
           {groups.map((g) => (
             <div key={g.key} className="panel overflow-x-auto">
