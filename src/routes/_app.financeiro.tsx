@@ -53,6 +53,26 @@ const TABS = [
 
 type Form = Partial<Tx> & { installments?: number; recurrence?: string; recurrenceTimes?: number };
 
+type TxGroup = { key: string; label: string; items: Tx[]; rec: number; desp: number };
+
+/** Groups transactions by due month/year, newest month first. Subtotals only count `currency`. */
+function groupByMonth(list: Tx[], currency: string, dueOf: (t: Tx) => string): TxGroup[] {
+  const map = new Map<string, TxGroup>();
+  for (const t of list) {
+    const key = (dueOf(t) || "").slice(0, 7);
+    if (!key) continue;
+    let g = map.get(key);
+    if (!g) {
+      const label = new Intl.DateTimeFormat("pt-BR", { month: "long", year: "numeric" }).format(new Date(`${key}-01T00:00:00`));
+      g = { key, label: label.charAt(0).toUpperCase() + label.slice(1), items: [], rec: 0, desp: 0 };
+      map.set(key, g);
+    }
+    g.items.push(t);
+    if (t.currency === currency) { if (t.type === "receita") g.rec += Number(t.amount); else g.desp += Number(t.amount); }
+  }
+  return [...map.values()].sort((a, b) => b.key.localeCompare(a.key));
+}
+
 function Financeiro() {
   const { tr } = useI18n();
   const { canExport } = useAccess();
@@ -67,6 +87,7 @@ function Financeiro() {
   const [fTag, setFTag] = useState("");
   const [fBy, setFBy] = useState("");
   const [q, setQ] = useState("");
+  const [view, setView] = useState<"lista" | "mesano">("lista");
   const curList = useMemo(() => { const c: Record<string, number> = {}; txs.forEach((t) => (c[t.currency] = (c[t.currency] ?? 0) + 1)); return Object.entries(c).sort((a, b) => b[1] - a[1]).map(([k]) => k); }, [txs]);
   const [curSel, setCurSel] = useState("");
   const kcur = curSel || curList[0] || "USD";
@@ -130,6 +151,37 @@ function Financeiro() {
   const togglePaid = (t: Tx) =>
     m.update.mutate(t.status === "pago" ? { id: t.id, status: "pendente", paid_at: null } : { id: t.id, status: "pago", paid_at: todayStr() });
 
+  const renderRow = (t: Tx) => {
+                const late = t.status !== "pago" && daysUntil(due(t)) < 0;
+                return (
+                  <tr key={t.id} className="border-b border-border last:border-0 hover:bg-muted/40">
+                    <td className="whitespace-nowrap p-3">{fmtDate(due(t))}</td>
+                    <td className="max-w-xs cursor-pointer p-3 hover:text-primary" onClick={() => setEdit(t)}>{t.description} <TagBadges ids={t.tag_ids} /></td>
+                    <td className="p-3 text-muted-foreground">{[t.client_name, t.company].filter(Boolean).join(" · ")}</td>
+                    <td className="p-3 text-muted-foreground">{t.category}</td>
+                    <td className={`whitespace-nowrap p-3 text-right font-medium ${t.type === "receita" ? "text-success" : "text-destructive"}`}>{t.type === "despesa" ? "- " : ""}{money(t.amount, t.currency)}</td>
+                    <td className="whitespace-nowrap p-3 text-xs">
+                      {t.status === "pago" ? <span className="text-success">{tr("Pago")} {t.paid_at ? fmtDate(t.paid_at) : ""}</span> : late ? <span className="text-destructive">{tr("Vencido")}</span> : <span className="text-warning">{tr("Pendente")}</span>}
+                    </td>
+                    <td className="p-3"><CreatedBy createdBy={t.created_by} owner={t.user_id} withName /></td>
+                    <td className="p-3">
+                      <button aria-label={t.status === "pago" ? tr("Desfazer baixa") : tr("Marcar como pago")} onClick={() => togglePaid(t)}
+                        className="rounded border border-border p-1.5 text-muted-foreground hover:border-primary hover:text-primary">
+                        {t.status === "pago" ? <Undo2 className="h-3.5 w-3.5" /> : <Check className="h-3.5 w-3.5" />}
+                      </button>
+                    </td>
+                  </tr>
+                );
+              };
+  const head = (
+    <thead className="text-left text-xs text-muted-foreground">
+      <tr className="border-b border-border">
+        <th className="p-3">{tr("Vencimento")}</th><th className="p-3">{tr("Descrição")}</th><th className="p-3">{tr("Cliente / Empresa")}</th><th className="p-3">{tr("Categoria")}</th><th className="p-3 text-right">{tr("Valor")}</th><th className="p-3">{tr("Situação")}</th><th className="p-3">{tr("Lançado por")}</th><th className="p-3" />
+      </tr>
+    </thead>
+  );
+  const groups = useMemo(() => view === "mesano" ? groupByMonth(list, kcur, due) : [], [view, list, kcur]);
+
   return (
     <div>
       <PageHeader title={tr("Financeiro")} sub={tr("{0} lançamentos", [txs.length])}
@@ -166,6 +218,11 @@ function Financeiro() {
         <button className="chip" data-on={type === "receita"} onClick={() => setType(type === "receita" ? "" : "receita")}>{tr("Receitas")}</button>
         <button className="chip" data-on={type === "despesa"} onClick={() => setType(type === "despesa" ? "" : "despesa")}>{tr("Despesas")}</button>
         <input className="field h-8 w-48 text-xs" placeholder={tr("Buscar por nome do cliente")} value={q} onChange={(e) => setQ(e.target.value)} />
+        <span className="mx-1 h-4 w-px bg-border" />
+        <div role="group" aria-label={tr("Visualização")} className="flex gap-1">
+          <button className="chip" data-on={view === "lista"} onClick={() => setView("lista")}>{tr("Lista")}</button>
+          <button className="chip" data-on={view === "mesano"} onClick={() => setView("mesano")}>{tr("Por mês e ano")}</button>
+        </div>
         <div className="ml-auto flex gap-2"><TagFilter value={fTag} onChange={setFTag} /><PersonFilter value={fBy} onChange={setFBy} /></div>
       </div>
       <div className="mb-4 flex flex-wrap gap-3">
@@ -176,39 +233,22 @@ function Financeiro() {
           </div>
         ))}
       </div>
-      {list.length === 0 ? <Empty>{tr("Nada por aqui.")}</Empty> : (
+      {list.length === 0 ? <Empty>{tr("Nada por aqui.")}</Empty> : view === "mesano" ? (
+        <div className="space-y-4">
+          {groups.map((g) => (
+            <div key={g.key} className="panel overflow-x-auto">
+              <div className="flex flex-wrap items-center gap-3 border-b border-border px-4 py-3">
+                <h3 className="font-semibold">{g.label}</h3>
+                <span className="text-xs text-muted-foreground">{tr("{0} lançamentos", [g.items.length])}</span>
+                <div className="ml-auto flex gap-4 text-sm"><span className="text-success">+ {money(g.rec, kcur)}</span><span className="text-destructive">- {money(g.desp, kcur)}</span></div>
+              </div>
+              <table className="w-full text-sm">{head}<tbody>{g.items.map(renderRow)}</tbody></table>
+            </div>
+          ))}
+        </div>
+      ) : (
         <div className="panel overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead className="text-left text-xs text-muted-foreground">
-              <tr className="border-b border-border">
-                <th className="p-3">{tr("Vencimento")}</th><th className="p-3">{tr("Descrição")}</th><th className="p-3">{tr("Cliente / Empresa")}</th><th className="p-3">{tr("Categoria")}</th><th className="p-3 text-right">{tr("Valor")}</th><th className="p-3">{tr("Situação")}</th><th className="p-3">{tr("Lançado por")}</th><th className="p-3" />
-              </tr>
-            </thead>
-            <tbody>
-              {list.map((t) => {
-                const late = t.status !== "pago" && daysUntil(due(t)) < 0;
-                return (
-                  <tr key={t.id} className="border-b border-border last:border-0 hover:bg-muted/40">
-                    <td className="whitespace-nowrap p-3">{fmtDate(due(t))}</td>
-                    <td className="max-w-xs cursor-pointer p-3 hover:text-primary" onClick={() => setEdit(t)}>{t.description} <TagBadges ids={t.tag_ids} /></td>
-                    <td className="p-3 text-muted-foreground">{[t.client_name, t.company].filter(Boolean).join(" · ")}</td>
-                    <td className="p-3 text-muted-foreground">{t.category}</td>
-                    <td className={`whitespace-nowrap p-3 text-right font-medium ${t.type === "receita" ? "text-success" : "text-destructive"}`}>{t.type === "despesa" ? "- " : ""}{money(t.amount, t.currency)}</td>
-                    <td className="whitespace-nowrap p-3 text-xs">
-                      {t.status === "pago" ? <span className="text-success">{tr("Pago")} {t.paid_at ? fmtDate(t.paid_at) : ""}</span> : late ? <span className="text-destructive">{tr("Vencido")}</span> : <span className="text-warning">{tr("Pendente")}</span>}
-                    </td>
-                    <td className="p-3"><CreatedBy createdBy={t.created_by} owner={t.user_id} withName /></td>
-                    <td className="p-3">
-                      <button aria-label={t.status === "pago" ? tr("Desfazer baixa") : tr("Marcar como pago")} onClick={() => togglePaid(t)}
-                        className="rounded border border-border p-1.5 text-muted-foreground hover:border-primary hover:text-primary">
-                        {t.status === "pago" ? <Undo2 className="h-3.5 w-3.5" /> : <Check className="h-3.5 w-3.5" />}
-                      </button>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+          <table className="w-full text-sm">{head}<tbody>{list.map(renderRow)}</tbody></table>
         </div>
       )}
 
